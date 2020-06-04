@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249.121" height="59.348" viewBox="0 0 249.121 59.348">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4bbdfb;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        filter: url(#Shape_578);
+      }
+    </style>
+    <filter id="Shape_578" x="0" y="0" width="249.121" height="59.348" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#546e7a" flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Shape_578-2" data-name="Shape 578" class="cls-1" d="M942.886,357.739s7.36,16.6,19.272,16.6S983.021,362.7,993.8,362.7s9.717,20.652,21.094,20.652S1051.148,347,1063.791,347s28.346,25.609,42.187,25.609,14.091-8.261,26.847-8.261,17.258,19,24.929,19a14.367,14.367,0,0,0,11.506-5.783" transform="translate(-931.47 -338.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.hero-container {
+  height: 80vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-container::after {
+  content: "";
+  background: url(hero.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: inherit;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  flex-direction: column;
+}
+
+.content h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.content h3 {
+  font-size: 1.5rem;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    outline: none;
+    transition: color 500ms ease-in, background 500ms ease-in 250ms;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #fff;
+    color: #000;
+    transition: background 500ms ease-in, color 500ms ease-in 250ms;
+}
