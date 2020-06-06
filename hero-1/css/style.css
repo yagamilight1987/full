@@ -1,0 +1,191 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --primary: #099a97;
+  --primary-bg: rgba(0, 167, 157, 0.5);
+  --secondary: #b4cd93;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Nexa", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  height: 50px;
+  background: transparent;
+  padding: 0 1rem;
+  position: absolute;
+  z-index: 1;
+}
+
+.header .hamburger {
+  padding: 0.25rem;
+  width: 2.5rem;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger .icon {
+  background: var(--primary);
+  position: relative;
+  height: 0.25rem;
+  width: 100%;
+}
+
+.hamburger .icon::before,
+.hamburger .icon::after {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  height: 0.25rem;
+  width: 100%;
+}
+
+.hamburger .icon::before {
+  top: -0.5rem;
+}
+
+.hamburger .icon::after {
+  top: 0.5rem;
+}
+
+.menu {
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background: var(--primary);
+  top: 0;
+  left: -200px;
+  transition: left 500ms ease-in;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu .close {
+  height: 50px;
+  background: var(--primary-bg);
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.close .icon {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 1rem;
+}
+
+.close .icon::before,
+.close .icon::after {
+  content: "";
+  background: var(--white);
+  height: 100%;
+  width: 0.25rem;
+  position: absolute;
+}
+
+.close .icon::before {
+  transform: rotate(45deg);
+}
+
+.close .icon::after {
+  transform: rotate(-45deg);
+}
+
+.menu-items {
+  padding: 1rem;
+  list-style: none;
+}
+
+.item {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--white);
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 100ms ease-in;
+}
+
+.link:hover,
+.link:focus {
+  opacity: 1;
+}
+
+.hero-container {
+  height: 75vh;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-container::before {
+  content: "";
+  height: inherit;
+  width: 100%;
+  background: rgba(211, 177, 204, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content .left,
+.content .right {
+  width: 20%;
+}
+
+.content .left {
+  border: 1rem solid var(--black);
+  border-right: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.content .right {
+  border: 1rem solid var(--white);
+  border-left: none;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}

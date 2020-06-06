@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Nexa";
+  font-style: light;
+  font-weight: 300;
+  src: local("Nexa Light"), local("Nexa-Light"),
+    url(../fonts/NexaTextDemo-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Nexa";
+  font-style: bold;
+  font-weight: 700;
+  src: local("Nexa Bold"), local("Nexa-Bold"),
+    url(../fonts/NexaTextDemo-Bold.woff2) format("woff2");
+}
