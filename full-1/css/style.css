@@ -37,7 +37,7 @@ header::before {
   content: "";
   position: absolute;
   height: inherit;
-  width: 1024px;
+  width: 100%;
   background-color: #757770;
   opacity: 0.05;
   z-index: -1;
@@ -156,12 +156,15 @@ Hamburger End
   height: 20px;
   width: 300px;
   padding: 15px 5px;
-  border: none;
+  border: 1px solid rgba(7, 158, 240, 0.3);
   background: var(--white);
+  transition: background-color 250ms ease-in, border 100ms ease-in;
 }
 
-.search input:focus {
-  border: 1px solid #546e7a;
+.search input:focus,
+.search input:hover {
+  border: 1px solid #4bbdfb;
+  background-color: rgba(7, 158, 240, 0.1)
 }
 
 .header-buttons {
@@ -371,14 +374,22 @@ Main Section Start
 
 .dashboard {
   padding: 1rem;
-  max-height: 92vh;
-  overflow: hidden;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .dashboard .title {
   color: #536c78;
   font-size: 1.25rem;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title span {
+  font-size: 0.87rem;
+  font-weight: normal;
+  color: #63818f;
 }
 
 .dashboard .content {
@@ -395,12 +406,12 @@ Main Section Start
   box-shadow: 0px 0px 16px 0px rgba(113, 154, 175, 0.2);
 }
 
-.activity-feed .scroll-content,
+/* .activity-feed .scroll-content,
 .project-summary .scroll-content,
 .todays-tasks .scroll-content {
   max-height: 42%;
   overflow-y: scroll;
-}
+} */
 
 .content .header {
   color: #63818f;
@@ -408,6 +419,59 @@ Main Section Start
   font-weight: 700;
   padding: 1rem;
   border-bottom: 1px solid #dce1e4;
+}
+
+.activity-feed ul {
+  list-style: none;
+  padding: 0 1rem;
+  color: #63818f;
+}
+
+.activity-feed li {
+  margin: 0.5rem 0;
+}
+
+.activity-feed li.day {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.user.alt {
+  color: inherit;
+  background-color: transparent;
+  height: initial;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user.alt .pic {
+  background-color: #fdfefe;
+  box-shadow: 0 3px 6px rgba(113, 154, 175, 0.65);
+  align-self: flex-start;
+}
+
+.user.alt .name {
+  font-size: 0.75rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+  flex: 0.95;
+  align-self: flex-start;
+}
+
+.user.alt .name div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.user.alt .name div:first-child span:nth-child(2) {
+  color: #a2adb3;
+  font-weight: 400;
 }
 
 .other-feed {
