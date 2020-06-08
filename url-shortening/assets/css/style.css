@@ -23,7 +23,28 @@ html {
   font-size: 18px;
 }
 
-body {
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
 }
 
 /***********
@@ -97,12 +118,12 @@ Hero Start
   padding: 1rem;
   display: flex;
   height: 600px;
-  background: url("../images/illustration-working.svg") no-repeat 120% 0%
+  background: url("../images/illustration-working.svg") no-repeat 50vw 0%
     var(--white);
   margin-top: 3rem;
 }
 
-.content {
+.hero .content {
   width: 1110px;
   margin: 0 auto;
   display: flex;
@@ -111,20 +132,19 @@ Hero Start
   padding-top: 4rem;
 }
 
-.content h1 {
+.hero .content .title {
   width: 50%;
-  font-size: 3rem;
   color: var(--dark-blue);
   line-height: 3.5rem;
 }
 
-.content h4 {
+.hero .content .subtitle {
   width: 50%;
   color: var(--grayish-violet);
   font-weight: 500;
 }
 
-.content button {
+.hero .content button {
   margin-top: 1rem;
   padding: 0.75rem 2rem;
   border-radius: 2rem;
@@ -178,6 +198,9 @@ Form Start
 Form End
 ***********/
 
+/***********
+Advanced Statistics Started
+***********/
 .advanced-statistics {
   display: flex;
   flex-direction: column;
@@ -185,4 +208,168 @@ Form End
   background: var(--body-bg);
   margin-top: -100px;
   padding-top: 200px;
+  color: var(--dark-blue);
+}
+
+.advanced-statistics .subtitle {
+  color: var(--grayish-violet);
+  font-weight: 500;
+}
+
+.cards {
+  width: 1110px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  padding: 5rem 0;
+}
+
+.card {
+  position: relative;
+}
+
+.card .card-body::after {
+  content: "";
+  height: 0.35rem;
+  width: 3rem;
+  background: var(--primary-cyan);
+  position: absolute;
+  top: 50%;
+  right: -3rem;
+}
+
+.cards li:last-child .card-body::after {
+  display: none;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: var(--white);
+  box-shadow: 0 0px 5px 0px var(--white);
+  position: relative;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  list-style: none;
+}
+
+.card .image {
+  background-color: var(--primary-dark-violet);
+  border-radius: 50%;
+  position: absolute;
+  top: -2.1rem;
+  left: 1rem;
+  padding: 1rem;
+  display: flex;
+}
+
+.image img {
+  height: 40px;
+  width: 40px;
+}
+
+.card .title {
+  color: var(--primary-dark-violet);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card .subtitle {
+  color: var(--grayish-violet);
+  font-weight: 500;
+}
+
+.cards li:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.cards li:nth-child(3) {
+  margin-top: 4rem;
+}
+/***********
+Advanced Statistics End
+***********/
+
+/***********
+Get Started Started
+***********/
+.get-started {
+  background: url("../images/bg-shorten-desktop.svg") no-repeat center center
+    var(--primary-dark-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 169px;
+}
+
+.get-started .title {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.get-started .content {
+  text-align: center;
+}
+
+.get-started button {
+  padding: 0.5rem 2rem;
+  border-radius: 1.5rem;
+  letter-spacing: 1px;
+}
+/***********
+Get Started End
+***********/
+
+footer {
+  background: var(--dark-blue);
+}
+
+footer .container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: var(--grayish-violet);
+}
+
+.footer-menu .menu-item:first-child {
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.footer-menu .menu-item:first-child .menu-link {
+  color: inherit;
+}
+
+.footer-menu .menu-item .menu-link {
+  color: inherit;
+  font-size: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  list-style: none;
+  text-align:right;
+}
+
+.socials li {
+  list-style: none;
+  padding: .5rem;
 }
