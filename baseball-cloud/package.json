@@ -1,0 +1,16 @@
+{
+  "name": "baseball-cloud",
+  "version": "1.0.0",
+  "description": "https://www.behance.net/gallery/78946285/UIUX-Design-for-Sports-Web-app-Statistics-and-Data?tracking_source=search_projects_views%7Cdashboard  https://www.purrweb.com/portfolio/baseballcloud/",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/tailwind.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  }
+}

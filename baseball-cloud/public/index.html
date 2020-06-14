@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-200">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baseball Cloud</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+  </head>
+  <body class="font-oxygen min-h-screen container mx-auto flex flex-col">
+    <header
+      class="bg-white flex justify-between items-center pt-2 px-4 border-b-2"
+    >
+      <a href="#">
+        <img src="./images/logo.png" alt="Logo" class="w-full" />
+      </a>
+      <nav class="flex items-center py-2">
+        <a
+          href="#"
+          class="text-sm text-gray-500 mr-6 hover:text-gray-700 focus:text-gray-700"
+          >Leaderboard</a
+        >
+        <a
+          href="#"
+          class="text-sm text-gray-500 mr-6 hover:text-gray-700 focus:text-gray-700"
+          >Network</a
+        >
+        <a
+          href="#"
+          class="text-sm text-gray-500 mr-6 hover:text-gray-700 focus:text-gray-700"
+          >Blog</a
+        >
+        <a
+          href="#"
+          class="text-md text-gray-600 mr-6 italic font-mono tracking-tighter hover:text-gray-700 focus:text-gray-700"
+          >marucci</a
+        >
+        <a
+          href="#"
+          class="text-gray-500 hover:text-gray-700 focus:text-gray-700 inline-flex items-center"
+        >
+          <img
+            src="./images/profile.jpeg"
+            alt="Profile"
+            class="h-8 w-8 object-cover rounded-full"
+          />
+          <span class="text-sm text-current flex ml-2"
+            >Jason Wallace
+            <div class="w-4 self-end">
+              <svg fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+          </span>
+        </a>
+      </nav>
+    </header>
+    <section id="main" class="flex w-full bg-gray-200 py-2 flex-1">
+      <!-- Left side -->
+      <section class="bg-white w-3/12 rounded-t shadow-lg">
+        <div class="flex flex-col p-4">
+          <div
+            class="h-6 w-6 bg-blue-400 rounded-full self-end flex items-center justify-center shadow-md hover:bg-blue-500 focus:bg-blue-500 cursor-pointer"
+          >
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              class="h-3 w-3 text-white"
+            >
+              <path
+                d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"
+              ></path>
+            </svg>
+          </div>
+          <div class="self-center flex flex-col items-center">
+            <div class="mb-2">
+              <img
+                src="./images/profile.jpeg"
+                alt="Profile"
+                class="h-16 w-16 object-cover rounded-full"
+              />
+            </div>
+            <div class="text-sm text-gray-600">Jason Wallace</div>
+            <div class="text-xs text-gray-400">Pitcher</div>
+          </div>
+          <!-- Personal Info -->
+          <div>
+            <div class="mt-4 flex">
+              <span class="flex-shrink-0 font-bold text-xs text-gray-600">
+                Personal Info
+              </span>
+              <span class="w-full h-px bg-gray-300 self-center ml-2"></span>
+            </div>
+            <ul class="list-none font-normal text-xs text-gray-700 mt-2">
+              <li class="flex justify-end py-2">
+                <span class="text-green-500 mr-3 relative">
+                  <span
+                    class="absolute h-full inline-flex inset-0 items-center justify-center w-full"
+                    style="font-size: 3pt;"
+                    >Age</span
+                  >
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                    class="h-4 w-4 transform rotate-135"
+                  >
+                    <path
+                      d="M255.545 8c-66.269.119-126.438 26.233-170.86 68.685L48.971 40.971C33.851 25.851 8 36.559 8 57.941V192c0 13.255 10.745 24 24 24h134.059c21.382 0 32.09-25.851 16.971-40.971l-41.75-41.75c30.864-28.899 70.801-44.907 113.23-45.273 92.398-.798 170.283 73.977 169.484 169.442C423.236 348.009 349.816 424 256 424c-41.127 0-79.997-14.678-110.63-41.556-4.743-4.161-11.906-3.908-16.368.553L89.34 422.659c-4.872 4.872-4.631 12.815.482 17.433C133.798 479.813 192.074 504 256 504c136.966 0 247.999-111.033 248-247.998C504.001 119.193 392.354 7.755 255.545 8z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-auto">Age</span>
+                <span class="lg:w-12">20</span>
+              </li>
+              <li class="flex justify-end py-2">
+                <span class="text-blue-500 mr-3">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 192 512"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      d="M96 0c35.346 0 64 28.654 64 64s-28.654 64-64 64-64-28.654-64-64S60.654 0 96 0m48 144h-11.36c-22.711 10.443-49.59 10.894-73.28 0H48c-26.51 0-48 21.49-48 48v136c0 13.255 10.745 24 24 24h16v136c0 13.255 10.745 24 24 24h64c13.255 0 24-10.745 24-24V352h16c13.255 0 24-10.745 24-24V192c0-26.51-21.49-48-48-48z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-auto">Height</span>
+                <span class="lg:w-12">5ft 4in</span>
+              </li>
+              <li class="flex justify-end py-2">
+                <span class="text-purple-500 mr-3">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      d="M448 64h-25.98C438.44 92.28 448 125.01 448 160c0 105.87-86.13 192-192 192S64 265.87 64 160c0-34.99 9.56-67.72 25.98-96H64C28.71 64 0 92.71 0 128v320c0 35.29 28.71 64 64 64h384c35.29 0 64-28.71 64-64V128c0-35.29-28.71-64-64-64zM256 320c88.37 0 160-71.63 160-160S344.37 0 256 0 96 71.63 96 160s71.63 160 160 160zm-.3-151.94l33.58-78.36c3.5-8.17 12.94-11.92 21.03-8.41 8.12 3.48 11.88 12.89 8.41 21l-33.67 78.55C291.73 188 296 197.45 296 208c0 22.09-17.91 40-40 40s-40-17.91-40-40c0-21.98 17.76-39.77 39.7-39.94z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-auto">Weight</span>
+                <span class="lg:w-12">83kg</span>
+              </li>
+              <li class="flex justify-end py-2">
+                <span class="text-yellow-500 mr-3">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 496 512"
+                    class="h-4 w-4"
+                  >
+                    <path
+                      d="M368.5 363.9l28.8-13.9c11.1 22.9 26 43.2 44.1 60.9 34-42.5 54.5-96.3 54.5-154.9 0-58.5-20.4-112.2-54.2-154.6-17.8 17.3-32.6 37.1-43.6 59.5l-28.7-14.1c12.8-26 30-49 50.8-69C375.6 34.7 315 8 248 8 181.1 8 120.5 34.6 75.9 77.7c20.7 19.9 37.9 42.9 50.7 68.8l-28.7 14.1c-11-22.3-25.7-42.1-43.5-59.4C20.4 143.7 0 197.4 0 256c0 58.6 20.4 112.3 54.4 154.7 18.2-17.7 33.2-38 44.3-61l28.8 13.9c-12.9 26.7-30.3 50.3-51.5 70.7 44.5 43.1 105.1 69.7 172 69.7 66.8 0 127.3-26.5 171.9-69.5-21.1-20.4-38.5-43.9-51.4-70.6zm-228.3-32l-30.5-9.8c14.9-46.4 12.7-93.8-.6-134l30.4-10c15 45.6 18 99.9.7 153.8zm216.3-153.4l30.4 10c-13.2 40.1-15.5 87.5-.6 134l-30.5 9.8c-17.3-54-14.3-108.3.7-153.8z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-auto">Throws</span>
+                <span class="lg:w-12">R</span>
+              </li>
+              <li class="flex justify-end py-2">
+                <span class="text-pink-500 mr-3">
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 512 512"
+                    class="h-4 w-4 transform rotate-90"
+                  >
+                    <path
+                      d="M79.18 282.94a32.005 32.005 0 0 0-20.24 20.24L0 480l4.69 4.69 92.89-92.89c-.66-2.56-1.57-5.03-1.57-7.8 0-17.67 14.33-32 32-32s32 14.33 32 32-14.33 32-32 32c-2.77 0-5.24-.91-7.8-1.57l-92.89 92.89L32 512l176.82-58.94a31.983 31.983 0 0 0 20.24-20.24l33.07-84.07-98.88-98.88-84.07 33.07zM369.25 28.32L186.14 227.81l97.85 97.85 199.49-183.11C568.4 67.48 443.73-55.94 369.25 28.32z"
+                    />
+                  </svg>
+                </span>
+                <span class="mr-auto">Bats</span>
+                <span class="lg:w-12">L</span>
+              </li>
+            </ul>
+          </div>
+          <!-- School -->
+          <div>
+            <div class="mt-4 flex">
+              <span class="flex-shrink-0 font-bold text-sm text-gray-600">
+                School
+              </span>
+              <span class="w-full h-px bg-gray-300 self-center ml-2"></span>
+            </div>
+            <ul class="list-none font-normal text-xs text-gray-500">
+              <li class="mt-4">
+                <p>School</p>
+                <p class="text-gray-700">St. Johns River</p>
+              </li>
+              <li class="mt-4">
+                <p>School Year</p>
+                <p class="text-gray-700">Junior</p>
+              </li>
+              <li class="mt-4">
+                <p>Summer Team</p>
+                <p class="text-gray-700">Scorpions</p>
+              </li>
+              <li class="mt-4">
+                <p>College Commitment</p>
+                <p class="text-gray-700">University of Florida</p>
+              </li>
+            </ul>
+          </div>
+          <!-- Bio -->
+          <div>
+            <div class="mt-4 flex">
+              <span class="flex-shrink-0 font-bold text-sm text-gray-600">
+                Bio
+              </span>
+              <span class="w-full h-px bg-gray-300 self-center ml-2"></span>
+            </div>
+            <p
+              class="font-normal text-xs text-gray-500 mt-2 leading-loose tracking-wider"
+            >
+              US, baseball. Set numerous baseball records - was famous for his
+              big hitting. He won many titles with the New York Yankees.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Left side End -->
+      <!-- Right side -->
+      <section class="w-full ml-4 flex">
+        <div class="flex flex-col flex-1">
+          <div class="flex">
+            <!-- Pitcher Summary -->
+            <div
+              class="bg-white rounded-t shadow-lg py-6 px-6 w-2/5 flex-shrink-0"
+            >
+              <h3 class="text-sm font-bold text-gray-800">Pitcher Summary</h3>
+              <ul class="list-none text-sm mt-4">
+                <li class="flex flex-col my-6">
+                  <div class="flex justify-between">
+                    <span class="text-gray-600 font-medium"
+                      >Fastball Velocity</span
+                    >
+                    <span class="text-gray-800">93.6</span>
+                  </div>
+                  <div class="w-100 h-1 bg-gray-200 relative rounded-sm mt-1">
+                    <div
+                      class="absolute w-9/12 h-1 bg-yellow-500 rounded-sm"
+                    ></div>
+                  </div>
+                </li>
+                <li class="flex flex-col my-6">
+                  <div class="flex justify-between">
+                    <span class="text-gray-600 font-medium">Spin Rate</span>
+                    <span class="text-gray-800">2.401</span>
+                  </div>
+                  <div class="w-100 h-1 bg-gray-200 relative rounded-sm mt-1">
+                    <div
+                      class="absolute w-10/12 h-1 bg-yellow-500 rounded-sm"
+                    ></div>
+                  </div>
+                </li>
+                <li class="flex flex-col my-6">
+                  <div class="flex justify-between">
+                    <span class="text-gray-600 font-medium"
+                      >Pitch Movement</span
+                    >
+                    <span class="text-gray-800">90</span>
+                  </div>
+                  <div class="w-100 h-1 bg-gray-200 relative rounded-sm mt-1">
+                    <div
+                      class="absolute w-11/12 h-1 bg-yellow-500 rounded-sm"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- Recent Events -->
+            <div class="bg-white rounded-t shadow=lg py-6 px-6 ml-3 flex-1">
+              <h3 class="text-sm font-bold text-gray-800">Recent Events</h3>
+              <div class="mt-4 flex">
+                <div
+                  class="border border-gray-300 p-4 flex flex-col w-2/4 mr-4"
+                >
+                  <div class="flex flex-col lg:flex-row">
+                    <div class="text-blue-400 h-4 w-4 flex-shrink-0 mt-2">
+                      <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="lg:ml-2 text-6xl text-gray-700 leading-none"
+                      >22</span
+                    >
+                    <span
+                      class="lg:ml-2 text-2xl leading-normal text-gray-600 uppercase tracking-wide"
+                      >Oct</span
+                    >
+                  </div>
+                  <div class="text-xs text-gray-600 lg:ml-6 mt-2">
+                    Event Type: Practice Bullpen
+                  </div>
+                </div>
+                <div class="border border-gray-300 p-4 flex flex-col w-2/4">
+                  <div class="flex flex-col lg:flex-row">
+                    <div class="text-blue-400 h-4 w-4 flex-shrink-0 mt-2">
+                      <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fill-rule="evenodd"
+                          d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                          clip-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="lg:ml-2 text-6xl text-gray-700 leading-none"
+                      >19</span
+                    >
+                    <span
+                      class="lg:ml-2 text-2xl leading-normal text-gray-600 uppercase tracking-wide"
+                      >Oct</span
+                    >
+                  </div>
+                  <div class="text-xs text-gray-600 lg:ml-6 mt-2">
+                    Event Type: Practice On Field Batting Practice
+                  </div>
+                </div>
+              </div>
+              <div class="text-right text-xs text-gray-600 pt-2">
+                <span class="ml-1 text-gray-400"><<</span>
+                <span class="ml-1 text-gray-400"><</span>
+                <span
+                  class="cursor-pointer hover:text-blue-500 focus:text-blue-500 ml-1 text-blue-500 font-bold border-2 border-blue-500 px-1"
+                  >1</span
+                >
+                <span
+                  class="cursor-pointer hover:text-blue-500 focus:text-blue-500 ml-1"
+                  >2</span
+                >
+                <span
+                  class="cursor-pointer hover:text-blue-500 focus:text-blue-500 ml-1"
+                  >3</span
+                >
+                <span
+                  class="cursor-pointer hover:text-blue-500 focus:text-blue-500 ml-1"
+                  >></span
+                >
+                <span
+                  class="cursor-pointer hover:text-blue-500 focus:text-blue-500 ml-1"
+                  >>></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 bg-white rounded-t shadow-lg flex-1 flex flex-col">
+            <nav
+              class="py-4 px-6 border-b-2 border-gray-200 text-sm text-gray-700 font-bold"
+            >
+              <a
+                class="py-4 mr-6 border-b-4 border-transparent active:border-blue-400 active:text-blue-400 hover:border-blue-400 hover:text-blue-400 focus:border-blue-400 focus:text-blue-400"
+                href="#"
+                >Bio Data</a
+              >
+              <a
+                class="py-4 mr-6 border-b-4 border-blue-400 text-blue-400 active:border-blue-400 active:text-blue-400 hover:border-blue-400 hover:text-blue-400 focus:border-blue-400 focus:text-blue-400"
+                href="#"
+                >Pitching Data</a
+              >
+              <a
+                class="py-4 mr-6 border-b-4 border-transparent active:border-blue-400 active:text-blue-400 hover:border-blue-400 hover:text-blue-400 focus:border-blue-400 focus:text-blue-400"
+                href="#"
+                >Events</a
+              >
+              <a
+                class="py-4 mr-6 border-b-4 border-transparent active:border-blue-400 active:text-blue-400 hover:border-blue-400 hover:text-blue-400 focus:border-blue-400 focus:text-blue-400"
+                href="#"
+                >Comparison</a
+              >
+            </nav>
+            <div class="py-4 px-6 flex-1 flex flex-col">
+              <div class="flex-1 overflow-y-auto pr-4" style="max-height: 25rem;">
+                <div>
+                  <h3 class="text-sm text-gray-700">Top Pitching Values</h3>
+                  <ul
+                    class="list-none text-gray-600 text-xs py-2 leading-tight"
+                  >
+                    <li class="py-2 ml-4 text-gray-400">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Pitch Type</span><span>Velocity</span
+                        ><span>Spin Rate</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Fastball</span><span>100.987</span
+                        ><span>312.585</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Slider</span><span>102.559</span
+                        ><span>312.585</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Changeup</span><span>102.559</span
+                        ><span>34.78</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-4">
+                  <h3 class="text-sm text-gray-700">Average Pitching Values</h3>
+                  <ul
+                    class="list-none text-gray-600 text-xs py-2 leading-tight"
+                  >
+                    <li class="py-2 ml-4 text-gray-400">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Pitch Type</span><span>Velocity</span
+                        ><span>Spin Rate</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Fastball</span><span>100.987</span
+                        ><span>2.23</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Slider</span><span>102.559</span
+                        ><span>0.036</span>
+                      </div>
+                    </li>
+                    <li class="py-2 ml-4 bg-gray-200 mb-1">
+                      <div class="px-3 grid grid-cols-3 gap-4">
+                        <span>Changeup</span><span>102.559</span
+                        ><span>2.23</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Right side End -->
+    </section>
+  </body>
+</html>
